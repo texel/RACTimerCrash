@@ -7,6 +7,6 @@ target 'RACTimerCrash' do
   pod "ReactiveCocoa", "~> 2.4.2"
 end
 
-target 'Test' do
+target 'RACTimerCrashTests' do
 
 end

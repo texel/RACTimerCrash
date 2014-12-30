@@ -8,8 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class RACSignal;
+@class RACCommand;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property IBOutlet NSPopUpButton *threadMenu;
+@property BOOL    runTimer;
+
+@property RACSignal  *timer;
+@property RACCommand *command;
 
 @end
 

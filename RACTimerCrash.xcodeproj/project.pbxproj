@@ -1,413 +1,892 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		7D26CCAF1A52415D00B6E6FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D26CCAE1A52415D00B6E6FF /* AppDelegate.m */; };
-		7D26CCB11A52415D00B6E6FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D26CCB01A52415D00B6E6FF /* main.m */; };
-		7D26CCB31A52415D00B6E6FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D26CCB21A52415D00B6E6FF /* Images.xcassets */; };
-		7D26CCB61A52415D00B6E6FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D26CCB41A52415D00B6E6FF /* MainMenu.xib */; };
-		7D26CCC21A52415D00B6E6FF /* RACTimerCrashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D26CCC11A52415D00B6E6FF /* RACTimerCrashTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7D26CCBC1A52415D00B6E6FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D26CCA01A52415D00B6E6FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D26CCA71A52415D00B6E6FF;
-			remoteInfo = RACTimerCrash;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		7D26CCA81A52415D00B6E6FF /* RACTimerCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACTimerCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D26CCAC1A52415D00B6E6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D26CCAD1A52415D00B6E6FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7D26CCAE1A52415D00B6E6FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7D26CCB01A52415D00B6E6FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7D26CCB21A52415D00B6E6FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7D26CCB51A52415D00B6E6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7D26CCBB1A52415D00B6E6FF /* RACTimerCrashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACTimerCrashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D26CCC01A52415D00B6E6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D26CCC11A52415D00B6E6FF /* RACTimerCrashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTimerCrashTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		7D26CCA51A52415D00B6E6FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D26CCB81A52415D00B6E6FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		7D26CC9F1A52415D00B6E6FF = {
-			isa = PBXGroup;
-			children = (
-				7D26CCAA1A52415D00B6E6FF /* RACTimerCrash */,
-				7D26CCBE1A52415D00B6E6FF /* RACTimerCrashTests */,
-				7D26CCA91A52415D00B6E6FF /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7D26CCA91A52415D00B6E6FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7D26CCA81A52415D00B6E6FF /* RACTimerCrash.app */,
-				7D26CCBB1A52415D00B6E6FF /* RACTimerCrashTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7D26CCAA1A52415D00B6E6FF /* RACTimerCrash */ = {
-			isa = PBXGroup;
-			children = (
-				7D26CCAD1A52415D00B6E6FF /* AppDelegate.h */,
-				7D26CCAE1A52415D00B6E6FF /* AppDelegate.m */,
-				7D26CCB21A52415D00B6E6FF /* Images.xcassets */,
-				7D26CCB41A52415D00B6E6FF /* MainMenu.xib */,
-				7D26CCAB1A52415D00B6E6FF /* Supporting Files */,
-			);
-			path = RACTimerCrash;
-			sourceTree = "<group>";
-		};
-		7D26CCAB1A52415D00B6E6FF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7D26CCAC1A52415D00B6E6FF /* Info.plist */,
-				7D26CCB01A52415D00B6E6FF /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7D26CCBE1A52415D00B6E6FF /* RACTimerCrashTests */ = {
-			isa = PBXGroup;
-			children = (
-				7D26CCC11A52415D00B6E6FF /* RACTimerCrashTests.m */,
-				7D26CCBF1A52415D00B6E6FF /* Supporting Files */,
-			);
-			path = RACTimerCrashTests;
-			sourceTree = "<group>";
-		};
-		7D26CCBF1A52415D00B6E6FF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7D26CCC01A52415D00B6E6FF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		7D26CCA71A52415D00B6E6FF /* RACTimerCrash */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D26CCC51A52415D00B6E6FF /* Build configuration list for PBXNativeTarget "RACTimerCrash" */;
-			buildPhases = (
-				7D26CCA41A52415D00B6E6FF /* Sources */,
-				7D26CCA51A52415D00B6E6FF /* Frameworks */,
-				7D26CCA61A52415D00B6E6FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RACTimerCrash;
-			productName = RACTimerCrash;
-			productReference = 7D26CCA81A52415D00B6E6FF /* RACTimerCrash.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7D26CCBA1A52415D00B6E6FF /* RACTimerCrashTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D26CCC81A52415D00B6E6FF /* Build configuration list for PBXNativeTarget "RACTimerCrashTests" */;
-			buildPhases = (
-				7D26CCB71A52415D00B6E6FF /* Sources */,
-				7D26CCB81A52415D00B6E6FF /* Frameworks */,
-				7D26CCB91A52415D00B6E6FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D26CCBD1A52415D00B6E6FF /* PBXTargetDependency */,
-			);
-			name = RACTimerCrashTests;
-			productName = RACTimerCrashTests;
-			productReference = 7D26CCBB1A52415D00B6E6FF /* RACTimerCrashTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		7D26CCA01A52415D00B6E6FF /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Onehub;
-				TargetAttributes = {
-					7D26CCA71A52415D00B6E6FF = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
-					7D26CCBA1A52415D00B6E6FF = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 7D26CCA71A52415D00B6E6FF;
-					};
-				};
-			};
-			buildConfigurationList = 7D26CCA31A52415D00B6E6FF /* Build configuration list for PBXProject "RACTimerCrash" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 7D26CC9F1A52415D00B6E6FF;
-			productRefGroup = 7D26CCA91A52415D00B6E6FF /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7D26CCA71A52415D00B6E6FF /* RACTimerCrash */,
-				7D26CCBA1A52415D00B6E6FF /* RACTimerCrashTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		7D26CCA61A52415D00B6E6FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D26CCB31A52415D00B6E6FF /* Images.xcassets in Resources */,
-				7D26CCB61A52415D00B6E6FF /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D26CCB91A52415D00B6E6FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7D26CCA41A52415D00B6E6FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D26CCB11A52415D00B6E6FF /* main.m in Sources */,
-				7D26CCAF1A52415D00B6E6FF /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D26CCB71A52415D00B6E6FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D26CCC21A52415D00B6E6FF /* RACTimerCrashTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7D26CCBD1A52415D00B6E6FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D26CCA71A52415D00B6E6FF /* RACTimerCrash */;
-			targetProxy = 7D26CCBC1A52415D00B6E6FF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7D26CCB41A52415D00B6E6FF /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D26CCB51A52415D00B6E6FF /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		7D26CCC31A52415D00B6E6FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		7D26CCC41A52415D00B6E6FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		7D26CCC61A52415D00B6E6FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RACTimerCrash/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		7D26CCC71A52415D00B6E6FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RACTimerCrash/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		7D26CCC91A52415D00B6E6FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RACTimerCrashTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACTimerCrash.app/Contents/MacOS/RACTimerCrash";
-			};
-			name = Debug;
-		};
-		7D26CCCA1A52415D00B6E6FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RACTimerCrashTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACTimerCrash.app/Contents/MacOS/RACTimerCrash";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		7D26CCA31A52415D00B6E6FF /* Build configuration list for PBXProject "RACTimerCrash" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D26CCC31A52415D00B6E6FF /* Debug */,
-				7D26CCC41A52415D00B6E6FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D26CCC51A52415D00B6E6FF /* Build configuration list for PBXNativeTarget "RACTimerCrash" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D26CCC61A52415D00B6E6FF /* Debug */,
-				7D26CCC71A52415D00B6E6FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		7D26CCC81A52415D00B6E6FF /* Build configuration list for PBXNativeTarget "RACTimerCrashTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D26CCC91A52415D00B6E6FF /* Debug */,
-				7D26CCCA1A52415D00B6E6FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 7D26CCA01A52415D00B6E6FF /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1A513CD5229D7079CCCF38B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1EF10FB2BDA7AED74934B542</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1EF10FB2BDA7AED74934B542</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-RACTimerCrash.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6D4F90D70CE0CC95E008E804</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RACTimerCrash/Pods-RACTimerCrash-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7360DC394AE39339AA1416A0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CC9F1A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCAA1A52415D00B6E6FF</string>
+				<string>7D26CCBE1A52415D00B6E6FF</string>
+				<string>7D26CCA91A52415D00B6E6FF</string>
+				<string>C59E6C934C939F0A7716B472</string>
+				<string>A66BE58D8A7236CA1E9E6AF8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCA01A52415D00B6E6FF</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Onehub</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>7D26CCA71A52415D00B6E6FF</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+					</dict>
+					<key>7D26CCBA1A52415D00B6E6FF</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+						<key>TestTargetID</key>
+						<string>7D26CCA71A52415D00B6E6FF</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>7D26CCA31A52415D00B6E6FF</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7D26CC9F1A52415D00B6E6FF</string>
+			<key>productRefGroup</key>
+			<string>7D26CCA91A52415D00B6E6FF</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>7D26CCA71A52415D00B6E6FF</string>
+				<string>7D26CCBA1A52415D00B6E6FF</string>
+			</array>
+		</dict>
+		<key>7D26CCA31A52415D00B6E6FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7D26CCC31A52415D00B6E6FF</string>
+				<string>7D26CCC41A52415D00B6E6FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7D26CCA41A52415D00B6E6FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7D26CCB11A52415D00B6E6FF</string>
+				<string>7D26CCAF1A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CCA51A52415D00B6E6FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1A513CD5229D7079CCCF38B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CCA61A52415D00B6E6FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7D26CCB31A52415D00B6E6FF</string>
+				<string>7D26CCB61A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CCA71A52415D00B6E6FF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7D26CCC51A52415D00B6E6FF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7360DC394AE39339AA1416A0</string>
+				<string>7D26CCA41A52415D00B6E6FF</string>
+				<string>7D26CCA51A52415D00B6E6FF</string>
+				<string>7D26CCA61A52415D00B6E6FF</string>
+				<string>6D4F90D70CE0CC95E008E804</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>RACTimerCrash</string>
+			<key>productName</key>
+			<string>RACTimerCrash</string>
+			<key>productReference</key>
+			<string>7D26CCA81A52415D00B6E6FF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>7D26CCA81A52415D00B6E6FF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RACTimerCrash.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7D26CCA91A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCA81A52415D00B6E6FF</string>
+				<string>7D26CCBB1A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCAA1A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCAD1A52415D00B6E6FF</string>
+				<string>7D26CCAE1A52415D00B6E6FF</string>
+				<string>7D26CCB21A52415D00B6E6FF</string>
+				<string>7D26CCB41A52415D00B6E6FF</string>
+				<string>7D26CCAB1A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>RACTimerCrash</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCAB1A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCAC1A52415D00B6E6FF</string>
+				<string>7D26CCB01A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCAC1A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCAD1A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCAE1A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCAF1A52415D00B6E6FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7D26CCAE1A52415D00B6E6FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7D26CCB01A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCB11A52415D00B6E6FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7D26CCB01A52415D00B6E6FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7D26CCB21A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCB31A52415D00B6E6FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7D26CCB21A52415D00B6E6FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7D26CCB41A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCB51A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCB51A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCB61A52415D00B6E6FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7D26CCB41A52415D00B6E6FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7D26CCB71A52415D00B6E6FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7D26CCC21A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CCB81A52415D00B6E6FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CCB91A52415D00B6E6FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7D26CCBA1A52415D00B6E6FF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7D26CCC81A52415D00B6E6FF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7D26CCB71A52415D00B6E6FF</string>
+				<string>7D26CCB81A52415D00B6E6FF</string>
+				<string>7D26CCB91A52415D00B6E6FF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>7D26CCBD1A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>RACTimerCrashTests</string>
+			<key>productName</key>
+			<string>RACTimerCrashTests</string>
+			<key>productReference</key>
+			<string>7D26CCBB1A52415D00B6E6FF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>7D26CCBB1A52415D00B6E6FF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RACTimerCrashTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7D26CCBC1A52415D00B6E6FF</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>7D26CCA01A52415D00B6E6FF</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7D26CCA71A52415D00B6E6FF</string>
+			<key>remoteInfo</key>
+			<string>RACTimerCrash</string>
+		</dict>
+		<key>7D26CCBD1A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>7D26CCA71A52415D00B6E6FF</string>
+			<key>targetProxy</key>
+			<string>7D26CCBC1A52415D00B6E6FF</string>
+		</dict>
+		<key>7D26CCBE1A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCC11A52415D00B6E6FF</string>
+				<string>7D26CCBF1A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>RACTimerCrashTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCBF1A52415D00B6E6FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7D26CCC01A52415D00B6E6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCC01A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCC11A52415D00B6E6FF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RACTimerCrashTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D26CCC21A52415D00B6E6FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7D26CCC11A52415D00B6E6FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7D26CCC31A52415D00B6E6FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7D26CCC41A52415D00B6E6FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7D26CCC51A52415D00B6E6FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7D26CCC61A52415D00B6E6FF</string>
+				<string>7D26CCC71A52415D00B6E6FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7D26CCC61A52415D00B6E6FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C156CB427F1EF49FEA77D783</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RACTimerCrash/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7D26CCC71A52415D00B6E6FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D8D2FA5422218D41B42FDDA0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RACTimerCrash/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7D26CCC81A52415D00B6E6FF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7D26CCC91A52415D00B6E6FF</string>
+				<string>7D26CCCA1A52415D00B6E6FF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7D26CCC91A52415D00B6E6FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>RACTimerCrashTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/RACTimerCrash.app/Contents/MacOS/RACTimerCrash</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7D26CCCA1A52415D00B6E6FF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>RACTimerCrashTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/RACTimerCrash.app/Contents/MacOS/RACTimerCrash</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A66BE58D8A7236CA1E9E6AF8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1EF10FB2BDA7AED74934B542</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C156CB427F1EF49FEA77D783</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RACTimerCrash.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RACTimerCrash/Pods-RACTimerCrash.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C59E6C934C939F0A7716B472</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C156CB427F1EF49FEA77D783</string>
+				<string>D8D2FA5422218D41B42FDDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D8D2FA5422218D41B42FDDA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RACTimerCrash.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RACTimerCrash/Pods-RACTimerCrash.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>7D26CCA01A52415D00B6E6FF</string>
+</dict>
+</plist>
