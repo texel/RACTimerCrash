@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking-RACExtensions/RACAFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -22,7 +24,14 @@
     initWithEnabled:RACObserve(self, runTimer)
         signalBlock:^RACSignal *(id input) {
           NSLog(@"Executing command triggered by %@", input);
-          return [RACSignal return:@"tacos"];
+
+          AFHTTPClient *client = [[AFHTTPClient alloc]
+            initWithBaseURL:[[NSURL alloc] initWithString:@"http://localhost:4567"]
+          ];
+
+          return [[client rac_getPath:@"/" parameters:@{}] doError:^ (NSError *error) {
+            NSLog(@"Error!");
+          }];
         }];
 
   [self setupTimers];
@@ -30,8 +39,8 @@
 
 - (void)setupTimers
 {
-  RACSignal *mainThreadTimer = [RACSignal interval:0.02 onScheduler:[RACScheduler mainThreadScheduler]];
-  RACSignal *backgroundTimer = [RACSignal interval:0.02
+  RACSignal *mainThreadTimer = [RACSignal interval:0.2 onScheduler:[RACScheduler mainThreadScheduler]];
+  RACSignal *backgroundTimer = [RACSignal interval:0.2
                                        onScheduler:[RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground]];
 
   self.threadMenu.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {

@@ -6,6 +6,18 @@
 // project.
 
 
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 1
+#define COCOAPODS_VERSION_MINOR_AFNetworking 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking 4
+
+// AFNetworking-RACExtensions
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_RACExtensions
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_RACExtensions 0
+#define COCOAPODS_VERSION_MINOR_AFNetworking_RACExtensions 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking_RACExtensions 6
+
 // ReactiveCocoa
 #define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2
