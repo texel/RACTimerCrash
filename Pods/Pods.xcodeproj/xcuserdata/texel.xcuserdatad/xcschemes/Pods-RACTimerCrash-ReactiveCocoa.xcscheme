@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44EDFAFB36BC2AE8F5EFD49C"
+               BlueprintIdentifier = "B5A789BD6F8D8A160E6F33FD"
                BuildableName = "libPods-RACTimerCrash-ReactiveCocoa.a"
                BlueprintName = "Pods-RACTimerCrash-ReactiveCocoa"
                ReferencedContainer = "container:Pods.xcodeproj">

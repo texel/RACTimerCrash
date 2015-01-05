@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-RACTimerCrash-AFNetworking-RACExtensions.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-RACTimerCrash-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>028EDC6CF9E8F57392B72CFE</key>
+		<key>5E5CBEAAEC9CCACDBCB28FC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44EDFAFB36BC2AE8F5EFD49C</key>
+		<key>B5A789BD6F8D8A160E6F33FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>85F64493AD4DAAE0E116C759</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9F10CFA0AADC7D51396A84F9</key>
+		<key>C2E269A3D576D3F6540C7D43</key>
 		<dict>
 			<key>primary</key>
 			<true/>

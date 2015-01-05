@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "AFHTTPClient.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <AFNetworking/AFNetworking.h>
-#import <AFNetworking-RACExtensions/RACAFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -19,19 +19,31 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  self.client = [[AFHTTPClient alloc]
+    initWithBaseURL:[[NSURL alloc] initWithString:@"http://localhost:3000"]
+  ];
+
+  NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0
+                                                          diskCapacity:0
+                                                              diskPath:nil];
+  [NSURLCache setSharedURLCache:sharedCache];
 
   self.command = [[RACCommand alloc]
     initWithEnabled:RACObserve(self, runTimer)
         signalBlock:^RACSignal *(id input) {
           NSLog(@"Executing command triggered by %@", input);
 
-          AFHTTPClient *client = [[AFHTTPClient alloc]
-            initWithBaseURL:[[NSURL alloc] initWithString:@"http://localhost:4567"]
-          ];
+          [self.client getPath:@"/"
+               parameters:@{}
+                  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                    NSLog(@"Success!");
+                  }
+                  failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                    NSLog(@"%li", (unsigned long)[[NSURLCache sharedURLCache] currentDiskUsage]);
+                    NSLog(@"Error!");
+                  }];
 
-          return [[client rac_getPath:@"/" parameters:@{}] doError:^ (NSError *error) {
-            NSLog(@"Error!");
-          }];
+          return [RACSignal return:@YES];
         }];
 
   [self setupTimers];
@@ -60,6 +72,32 @@
     subscribeNext:^(id x) {
       [self.command execute:@"command"];
     }];
+//  NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.2
+//                                                    target:self
+//                                                  selector:@selector(getThing)
+//                                                  userInfo:nil
+//                                                   repeats:YES];
+}
+
+- (void)getThing
+{
+  AFHTTPClient *client = [[AFHTTPClient alloc]
+    initWithBaseURL:[[NSURL alloc] initWithString:@"http://www.apple.com"]
+  ];
+
+//          return [[client rac_getPath:@"/" parameters:@{}] doError:^ (NSError *error) {
+//            NSLog(@"Error!");
+//          }];
+
+
+  [client getPath:@"/"
+       parameters:@{}
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"Success!");
+          }
+          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error!");
+          }];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

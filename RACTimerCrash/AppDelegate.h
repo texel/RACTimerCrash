@@ -10,6 +10,7 @@
 
 @class RACSignal;
 @class RACCommand;
+@class AFHTTPClient;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
@@ -18,6 +19,8 @@
 
 @property RACSignal  *timer;
 @property RACCommand *command;
+@property AFHTTPClient *client;
 
+- (void)getThing;
 @end
 

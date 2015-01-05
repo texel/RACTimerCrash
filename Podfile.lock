@@ -1,8 +1,5 @@
 PODS:
   - AFNetworking (1.3.4)
-  - AFNetworking-RACExtensions (0.1.6):
-    - AFNetworking (~> 1.3.4)
-    - ReactiveCocoa (~> 2.0)
   - ReactiveCocoa (2.4.2):
     - ReactiveCocoa/UI (= 2.4.2)
   - ReactiveCocoa/Core (2.4.2):
@@ -13,22 +10,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 1.3.4)
-  - AFNetworking-RACExtensions (from `https://github.com/texel/AFNetworking-RACExtensions`, branch `AFNetworking-1.x`)
   - ReactiveCocoa (~> 2.4.2)
-
-EXTERNAL SOURCES:
-  AFNetworking-RACExtensions:
-    :branch: AFNetworking-1.x
-    :git: https://github.com/texel/AFNetworking-RACExtensions
-
-CHECKOUT OPTIONS:
-  AFNetworking-RACExtensions:
-    :commit: 211d7417d767cced6f6a1ab0285b60bc46f3c9d8
-    :git: https://github.com/texel/AFNetworking-RACExtensions
 
 SPEC CHECKSUMS:
   AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
-  AFNetworking-RACExtensions: e6cb64ea28edf1c4483ab82febcac0fee2679f4f
   ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0.beta.1

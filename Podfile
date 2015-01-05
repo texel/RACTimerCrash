@@ -6,7 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'RACTimerCrash' do
   pod "AFNetworking", "~> 1.3.4"
   pod "ReactiveCocoa", "~> 2.4.2"
-  pod "AFNetworking-RACExtensions", :git => "https://github.com/texel/AFNetworking-RACExtensions", :branch => "AFNetworking-1.x"
+  # pod "AFNetworking-RACExtensions", :git => "https://github.com/texel/AFNetworking-RACExtensions", :branch => "AFNetworking-1.x"
 end
 
 target 'RACTimerCrashTests' do

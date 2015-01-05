@@ -281,7 +281,7 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
 
 #ifdef _SYSTEMCONFIGURATION_H
     self.networkReachabilityStatus = AFNetworkReachabilityStatusUnknown;
-    [self startMonitoringNetworkReachability];
+    //[self startMonitoringNetworkReachability];
 #endif
 
     self.operationQueue = [[NSOperationQueue alloc] init];
